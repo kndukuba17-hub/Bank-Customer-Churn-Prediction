@@ -1,7 +1,9 @@
-# Bank Customer Churn Prediction — dependencies
+# Customer Churn Prediction — dependencies
 pandas>=1.5
 numpy>=1.23
 scikit-learn>=1.2
+xgboost>=1.7
+shap>=0.42
 matplotlib>=3.6
 seaborn>=0.12
 jupyter>=1.0

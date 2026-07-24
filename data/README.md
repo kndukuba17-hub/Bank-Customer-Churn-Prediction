@@ -1,5 +1,14 @@
 # Data
 
-**Target dataset (real-data upgrade):** [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) — ~7,000 real customers with a churn label.
+**Dataset:** [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+— 7,043 real customers (26.5% churn), 21 columns.
 
-Download the CSV, place it in this folder, and point the notebook loader at it. The currently committed notebook uses a synthetic generator (see repo README roadmap). Raw data is git-ignored.
+## One-step download (public IBM mirror)
+```bash
+curl -L -o data/telco_churn.csv \
+  "https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv"
+```
+Then run the notebook. All cleaning (the text `TotalCharges` column, tenure-0 blanks) and
+encoding happen inside the notebook / `src/churn_features.py`.
+
+Raw data (`*.csv`) is kept out of git via `.gitignore`.
