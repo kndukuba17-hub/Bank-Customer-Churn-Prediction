@@ -68,8 +68,8 @@ Python · pandas · NumPy · scikit-learn · XGBoost · SHAP · Matplotlib · Se
 
 ## 🚀 How to Run
 ```bash
-git clone https://github.com/kndukuba17-hub/Bank-Customer-Churn-Prediction.git
-cd Bank-Customer-Churn-Prediction
+git clone https://github.com/kndukuba17-hub/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
 pip install -r requirements.txt
 # download telco_churn.csv into data/ (see data/README.md), then:
 jupyter notebook notebooks/bank_customer_churn.ipynb
